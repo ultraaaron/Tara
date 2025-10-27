@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Tara</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Tara</h1>
+            </div>
+            <div class="nav-search">
+                <input type="text" placeholder="Search makeup, skincare, accessories..." class="search-bar">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="seller-dashboard.html">Sell</a>
+                <a href="#">Account</a>
+                <button class="snipcart-checkout cart-icon">
+                    Cart (<span class="snipcart-items-count">0</span>)
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="product-detail-main">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> > 
+            <a href="products.html">Makeup</a> > 
+            <a href="products.html">Lipstick</a> > 
+            <span>Matte Liquid Lipstick</span>
+        </div>
+
+        <div class="product-detail-container">
+            <!-- Product Images -->
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="https://via.placeholder.com/500x500?text=Matte+Lipstick" alt="Matte Liquid Lipstick" id="mainProductImage">
+                </div>
+                <div class="thumbnail-images">
+                    <img src="https://via.placeholder.com/100x100?text=Swatch1" alt="Swatch 1" class="thumbnail active">
+                    <img src="https://via.placeholder.com/100x100?text=Swatch2" alt="Swatch 2" class="thumbnail">
+                    <img src="https://via.placeholder.com/100x100?text=Swatch3" alt="Swatch 3" class="thumbnail">
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <div class="product-badge featured">Featured</div>
+                <h1>Matte Liquid Lipstick - Ruby Red</h1>
+                <div class="seller-info">
+                    <span>Sold by: </span>
+                    <a href="#" class="seller-link">BeautyHub UG</a>
+                    <span class="rating">⭐ 4.8 (124 reviews)</span>
+                </div>
+
+                <div class="price-section">
+                    <div class="current-price">UGX 15,000</div>
+                    <div class="original-price">UGX 30,000</div>
+                    <div class="discount">Save 50%</div>
+                </div>
+
+                <div class="stock-section">
+                    <div class="stock-status in-stock">In Stock (25+ items)</div>
+                    <div class="delivery-info">🚚 Free delivery in Kampala</div>
+                </div>
+
+                <div class="product-options">
+                    <div class="option-group">
+                        <label for="colorSelect">Color:</label>
+                        <select id="colorSelect">
+                            <option value="ruby-red">Ruby Red</option>
+                            <option value="nude-pink">Nude Pink</option>
+                            <option value="berry-wine">Berry Wine</option>
+                            <option value="coral-orange">Coral Orange</option>
+                        </select>
+                    </div>
+
+                    <div class="option-group">
+                        <label for="skinToneSelect">Best for Skin Tone:</label>
+                        <select id="skinToneSelect">
+                            <option value="light">Light</option>
+                            <option value="medium">Medium</option>
+                            <option value="tan">Tan</option>
+                            <option value="deep">Deep</option>
+                            <option value="dark">Dark</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="add-to-cart-section">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" id="decreaseQty">-</button>
+                        <span id="quantity">1</span>
+                        <button class="quantity-btn" id="increaseQty">+</button>
+                    </div>
+
+                    <button class="snipcart-add-item add-to-cart-btn"
+                        data-item-id="lipstick-ruby-red"
+                        data-item-price="15000"
+                        data-item-url="/product-detail.html"
+                        data-item-name="Matte Liquid Lipstick - Ruby Red"
+                        data-item-description="Long-lasting matte liquid lipstick in beautiful ruby red. Transfer-proof and comfortable wear for up to 12 hours."
+                        data-item-image="https://via.placeholder.com/500x500?text=Matte+Lipstick"
+                        data-item-categories="makeup.lipstick"
+                        data-item-custom1-name="Color"
+                        data-item-custom1-options="Ruby Red|Nude Pink|Berry Wine|Coral Orange"
+                        data-item-custom2-name="Skin Tone"
+                        data-item-custom2-options="Light|Medium|Tan|Deep|Dark">
+                        Add to Cart - UGX 15,000
+                    </button>
+
+                    <button class="buy-now-btn snipcart-add-item"
+                        data-item-id="lipstick-ruby-red"
+                        data-item-price="15000"
+                        data-item-url="/product-detail.html"
+                        data-item-name="Matte Liquid Lipstick - Ruby Red"
+                        data-item-description="Long-lasting matte liquid lipstick"
+                        data-item-image="https://via.placeholder.com/500x500?text=Matte+Lipstick"
+                        onclick="setTimeout(() => { document.querySelector('.snipcart-checkout').click(); }, 500)">
+                        Buy Now
+                    </button>
+                </div>
+
+                <div class="product-features">
+                    <h4>Product Features:</h4>
+                    <ul>
+                        <li>✅ Long-lasting matte finish</li>
+                        <li>✅ Transfer-proof formula</li>
+                        <li>✅ Comfortable 12-hour wear</li>
+                        <li>✅ Cruelty-free & vegan</li>
+                        <li>✅ Made with natural ingredients</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Tabs -->
+        <div class="product-tabs">
+            <div class="tab-headers">
+                <button class="tab-header active" data-tab="description">Description</button>
+                <button class="tab-header" data-tab="reviews">Reviews (124)</button>
+                <button class="tab-header" data-tab="shipping">Shipping & Returns</button>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="description">
+                    <h3>Product Description</h3>
+                    <p>Our Matte Liquid Lipstick in Ruby Red offers intense color payoff with a comfortable, weightless feel. The innovative formula glides on smoothly and sets to a perfect matte finish that won't transfer or smudge.</p>
+                    <p>Specially formulated for African climate conditions, this lipstick is humidity-resistant and long-wearing. Perfect for all skin tones, with Ruby Red being our most universal red shade.</p>
+                </div>
+
+                <div class="tab-pane" id="reviews">
+                    <h3>Customer Reviews</h3>
+                    <div class="review">
+                        <div class="review-header">
+                            <span class="reviewer">Sarah K.</span>
+                            <span class="review-date">March 15, 2024</span>
+                            <span class="review-rating">⭐️⭐️⭐️⭐️⭐️</span>
+                        </div>
+                        <p>"Absolutely love this lipstick! The color is perfect for my skin tone and it lasts all day without drying my lips."</p>
+                    </div>
+                    <!-- More reviews would go here -->
+                </div>
+
+                <div class="tab-pane" id="shipping">
+                    <h3>Shipping Information</h3>
+                    <p><strong>Kampala:</strong> 2-3 business days - Free delivery on orders over UGX 50,000</p>
+                    <p><strong>Other Cities:</strong> 5-7 business days - Delivery fee UGX 5,000-15,000</p>
+                    <p><strong>Returns:</strong> 30-day return policy for unused items</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products -->
+        <section class="related-products">
+            <h3>You Might Also Like</h3>
+            <div class="products-grid">
+                <!-- Related products would be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Snipcart Configuration -->
+    <div hidden id="snipcart" 
+        data-api-key="YOUR_SNIPCART_API_KEY" 
+        data-config-modal-style="side"
+        data-config-add-product-behavior="none">
+    </div>
+
+    <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

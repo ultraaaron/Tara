@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Tara</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Tara</h1>
+            </div>
+            <div class="nav-search">
+                <input type="text" placeholder="Search makeup, skincare, accessories..." class="search-bar" id="searchInput">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Shop</a>
+                <a href="seller-dashboard.html">Sell</a>
+                <a href="#">Account</a>
+                <button class="snipcart-checkout cart-icon">
+                    Cart (<span class="snipcart-items-count">0</span>)
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="products-main">
+        <div class="products-header">
+            <h2>Beauty Products</h2>
+            <p>Discover makeup, skincare, and accessories perfect for you</p>
+        </div>
+
+        <div class="products-container">
+            <!-- Filters Sidebar -->
+            <aside class="filters-sidebar">
+                <h3>Filters</h3>
+                
+                <div class="filter-group">
+                    <h4>Category</h4>
+                    <label><input type="checkbox" name="category" value="makeup"> Makeup</label>
+                    <label><input type="checkbox" name="category" value="skincare"> Skincare</label>
+                    <label><input type="checkbox" name="category" value="hair"> Hair Care</label>
+                    <label><input type="checkbox" name="category" value="accessories"> Accessories</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Price Range</h4>
+                    <label><input type="radio" name="price" value="0-10000"> Under UGX 10,000</label>
+                    <label><input type="radio" name="price" value="10000-25000"> UGX 10,000 - 25,000</label>
+                    <label><input type="radio" name="price" value="25000-50000"> UGX 25,000 - 50,000</label>
+                    <label><input type="radio" name="price" value="50000+"> Over UGX 50,000</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Stock Status</h4>
+                    <label><input type="checkbox" name="stock" value="in-stock"> In Stock</label>
+                    <label><input type="checkbox" name="stock" value="low-stock"> Low Stock</label>
+                </div>
+
+                <button class="apply-filters">Apply Filters</button>
+                <button class="clear-filters">Clear All</button>
+            </aside>
+
+            <!-- Products Grid -->
+            <section class="products-grid-container">
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products will be loaded dynamically via JavaScript -->
+                </div>
+                
+                <div class="pagination">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <span>...</span>
+                    <button class="page-btn">10</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Snipcart Configuration -->
+    <div hidden id="snipcart" 
+        data-api-key="YOUR_SNIPCART_API_KEY" 
+        data-config-modal-style="side"
+        data-config-add-product-behavior="none">
+    </div>
+
+    <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>

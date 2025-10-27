@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tara - Beauty & Fashion Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Tara</h1>
+            </div>
+            <div class="nav-search">
+                <input type="text" placeholder="Search makeup, skincare, accessories..." class="search-bar">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="seller-dashboard.html">Sell</a>
+                <a href="#">Account</a>
+                <button class="snipcart-checkout cart-icon">
+                    Cart (<span class="snipcart-items-count">0</span>)
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner with Flash Sale -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Flash Sale: 50% Off Everything</h2>
+            <p>Ends in: <span id="countdown">23:59:59</span></p>
+            <button class="cta-button" onclick="location.href='products.html'">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Shop by Skin Tone -->
+    <section class="skin-tone-section">
+        <h3>Shop by Skin Tone</h3>
+        <div class="skin-tone-options">
+            <div class="tone-option" data-tone="light">Light</div>
+            <div class="tone-option" data-tone="medium">Medium</div>
+            <div class="tone-option" data-tone="tan">Tan</div>
+            <div class="tone-option" data-tone="deep">Deep</div>
+            <div class="tone-option" data-tone="dark">Dark</div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <h3>Trending Now</h3>
+        <div class="products-grid">
+            
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-badge featured">Featured</div>
+                <img src="https://via.placeholder.com/300x300?text=Matte+Lipstick" alt="Matte Lipstick" class="product-image">
+                <div class="product-info">
+                    <h4>Matte Liquid Lipstick - Ruby Red</h4>
+                    <p class="seller">By BeautyHub UG</p>
+                    <div class="price">
+                        <span class="current-price">UGX 15,000</span>
+                        <span class="original-price">UGX 30,000</span>
+                        <span class="discount">50% OFF</span>
+                    </div>
+                    <div class="stock-status in-stock">In Stock</div>
+                    
+                    <button class="snipcart-add-item add-to-cart"
+                        data-item-id="lipstick-ruby-red"
+                        data-item-price="15000"
+                        data-item-url="/"
+                        data-item-name="Matte Liquid Lipstick - Ruby Red"
+                        data-item-description="Long-lasting matte liquid lipstick in beautiful ruby red. Perfect for all skin tones."
+                        data-item-image="https://via.placeholder.com/300x300?text=Matte+Lipstick"
+                        data-item-categories="makeup.lipstick"
+                        data-item-custom1-name="Skin Tone"
+                        data-item-custom1-options="Light|Medium|Tan|Deep|Dark"
+                        data-item-custom1-required="true">
+                        Add to Cart - UGX 15,000
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x300?text=Face+Cream" alt="Face Cream" class="product-image">
+                <div class="product-info">
+                    <h4>Brightening Face Cream</h4>
+                    <p class="seller">By GlowSkin</p>
+                    <div class="price">
+                        <span class="current-price">UGX 25,000</span>
+                    </div>
+                    <div class="stock-status low-stock">Only 2 left</div>
+                    
+                    <button class="snipcart-add-item add-to-cart"
+                        data-item-id="face-cream-brightening"
+                        data-item-price="25000"
+                        data-item-url="/"
+                        data-item-name="Brightening Face Cream"
+                        data-item-description="Daily brightening cream with SPF 30 protection. Suitable for sensitive skin."
+                        data-item-image="https://via.placeholder.com/300x300?text=Face+Cream"
+                        data-item-categories="skincare.face"
+                        data-item-quantity="1"
+                        data-item-max-quantity="2">
+                        Add to Cart - UGX 25,000
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-badge featured">Featured</div>
+                <img src="https://via.placeholder.com/300x300?text=Foundation" alt="Foundation" class="product-image">
+                <div class="product-info">
+                    <h4>Liquid Foundation - Medium Beige</h4>
+                    <p class="seller">By BasePerfect</p>
+                    <div class="price">
+                        <span class="current-price">UGX 35,000</span>
+                        <span class="original-price">UGX 45,000</span>
+                    </div>
+                    <div class="stock-status in-stock">In Stock</div>
+                    
+                    <button class="snipcart-add-item add-to-cart"
+                        data-item-id="foundation-medium-beige"
+                        data-item-price="35000"
+                        data-item-url="/"
+                        data-item-name="Liquid Foundation - Medium Beige"
+                        data-item-description="Buildable coverage foundation for medium skin tones. Oil-free formula."
+                        data-item-image="https://via.placeholder.com/300x300?text=Foundation"
+                        data-item-categories="makeup.face"
+                        data-item-custom1-name="Skin Tone Match"
+                        data-item-custom1-options="Light|Light-Medium|Medium|Medium-Tan|Tan">
+                        Add to Cart - UGX 35,000
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="view-all">
+            <a href="products.html" class="view-all-button">View All Products</a>
+        </div>
+    </section>
+
+    <!-- Banner Ad Space -->
+    <section class="banner-ad">
+        <div class="ad-space">
+            <p>Premium Advertising Space for Beauty Brands</p>
+            <small>Contact us to feature your brand here</small>
+        </div>
+    </section>
+
+    <!-- Why Tara Section -->
+    <section class="why-tara">
+        <h3>Why Shop With Tara?</h3>
+        <div class="features-grid">
+            <div class="feature">
+                <h4>🛡️ Buyer Protection</h4>
+                <p>Full refund if items don't arrive as described</p>
+            </div>
+            <div class="feature">
+                <h4>🚚 Fast Delivery</h4>
+                <p>2-3 day delivery in Kampala, 5-7 days nationwide</p>
+            </div>
+            <div class="feature">
+                <h4>💵 Mobile Money</h4>
+                <p>Pay easily with MTN & Airtel Money</p>
+            </div>
+            <div class="feature">
+                <h4>🎨 Diverse Products</h4>
+                <p>Curated for African skin tones and hair types</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Become a Seller CTA -->
+    <section class="become-seller">
+        <div class="seller-cta">
+            <h3>Start Selling on Tara</h3>
+            <p>Reach thousands of beauty-conscious shoppers across Uganda</p>
+            <a href="seller-dashboard.html" class="cta-button secondary">Become a Seller</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Tara</h4>
+                <p>Uganda's premier beauty and fashion marketplace</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: hello@tara.ug</p>
+                <p>Phone: +256 700 123 456</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <p>Instagram • Facebook • TikTok</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Snipcart Configuration -->
+    <div hidden id="snipcart" 
+        data-api-key="YOUR_SNIPCART_API_KEY" 
+        data-config-modal-style="side"
+        data-config-add-product-behavior="none">
+    </div>
+
+    <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

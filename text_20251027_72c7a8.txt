@@ -1,0 +1,14 @@
+
+## Customization
+
+### Brand Colors
+Update CSS variables in `:root` section of `style.css`:
+```css
+:root {
+    --dusty-rose: #D4A8A8;
+    --lavender: #B8B8FF;
+    --soft-peach: #FFD6CC;
+    --charcoal: #2F2F2F;
+    --off-white: #FAF9F6;
+    --gold: #D4AF37;
+}

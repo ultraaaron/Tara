@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard - Tara</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Tara</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="seller-dashboard.html" class="active">Seller Dashboard</a>
+                <a href="#">Account</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="seller-dashboard">
+        <div class="dashboard-header">
+            <h2>Seller Dashboard</h2>
+            <p>Manage your products, orders, and analytics</p>
+        </div>
+
+        <div class="dashboard-stats">
+            <div class="stat-card">
+                <h3>Total Revenue</h3>
+                <p class="stat-number">UGX 1,250,000</p>
+                <span class="stat-change positive">+15% this month</span>
+            </div>
+            <div class="stat-card">
+                <h3>Pending Orders</h3>
+                <p class="stat-number">12</p>
+                <span class="stat-change">Need attention</span>
+            </div>
+            <div class="stat-card">
+                <h3>Products Listed</h3>
+                <p class="stat-number">28</p>
+                <span class="stat-change positive">+5 this month</span>
+            </div>
+            <div class="stat-card">
+                <h3>Store Rating</h3>
+                <p class="stat-number">4.8 ★</p>
+                <span class="stat-change">Based on 89 reviews</span>
+            </div>
+        </div>
+
+        <div class="dashboard-tabs">
+            <div class="tab-headers">
+                <button class="tab-header active" data-tab="products">My Products</button>
+                <button class="tab-header" data-tab="orders">Orders</button>
+                <button class="tab-header" data-tab="analytics">Analytics</button>
+                <button class="tab-header" data-tab="premium">Go Premium</button>
+            </div>
+
+            <div class="tab-content">
+                <!-- Products Tab -->
+                <div class="tab-pane active" id="products">
+                    <div class="section-header">
+                        <h3>My Products</h3>
+                        <button class="add-product-btn" id="addProductBtn">+ Add New Product</button>
+                    </div>
+
+                    <div class="products-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Stock</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="product-cell">
+                                            <img src="https://via.placeholder.com/50x50?text=Lipstick" alt="Product">
+                                            <span>Matte Liquid Lipstick</span>
+                                        </div>
+                                    </td>
+                                    <td>UGX 15,000</td>
+                                    <td>
+                                        <span class="stock-badge in-stock">25</span>
+                                    </td>
+                                    <td>
+                                        <span class="status-badge active">Active</span>
+                                        <span class="featured-badge">Featured</span>
+                                    </td>
+                                    <td>
+                                        <button class="action-btn edit">Edit</button>
+                                        <button class="action-btn delete">Delete</button>
+                                    </td>
+                                </tr>
+                                <!-- More products would be listed here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Orders Tab -->
+                <div class="tab-pane" id="orders">
+                    <h3>Recent Orders</h3>
+                    <div class="orders-list">
+                        <div class="order-card pending">
+                            <div class="order-header">
+                                <span class="order-id">#ORD-7842</span>
+                                <span class="order-date">March 20, 2024</span>
+                                <span class="order-status pending">Pending</span>
+                            </div>
+                            <div class="order-details">
+                                <p><strong>Customer:</strong> Sarah M.</p>
+                                <p><strong>Items:</strong> Matte Liquid Lipstick × 2</p>
+                                <p><strong>Total:</strong> UGX 30,000</p>
+                            </div>
+                            <div class="order-actions">
+                                <button class="action-btn confirm">Confirm Order</button>
+                                <button class="action-btn contact">Contact Buyer</button>
+                            </div>
+                        </div>
+                        <!-- More orders would be listed here -->
+                    </div>
+                </div>
+
+                <!-- Analytics Tab -->
+                <div class="tab-pane" id="analytics">
+                    <h3>Store Analytics</h3>
+                    <div class="analytics-grid">
+                        <div class="analytics-card">
+                            <h4>Sales Overview</h4>
+                            <div class="chart-placeholder">
+                                <p>Sales chart would be displayed here</p>
+                            </div>
+                        </div>
+                        <div class="analytics-card">
+                            <h4>Top Products</h4>
+                            <ul class="top-products">
+                                <li>Matte Liquid Lipstick - UGX 450,000</li>
+                                <li>Face Foundation - UGX 320,000</li>
+                                <li>Mascara - UGX 180,000</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Tab -->
+                <div class="tab-pane" id="premium">
+                    <div class="premium-cta">
+                        <h3>Upgrade to Tara Premium</h3>
+                        <p>Get your products featured and access advanced analytics</p>
+                        
+                        <div class="premium-features">
+                            <div class="feature">
+                                <h4>🚀 Priority Placement</h4>
+                                <p>Your products appear first in search results</p>
+                            </div>
+                            <div class="feature">
+                                <h4>📊 Advanced Analytics</h4>
+                                <p>Detailed insights into customer behavior</p>
+                            </div>
+                            <div class="feature">
+                                <h4>🎯 Featured Listings</h4>
+                                <p>Highlight your products on homepage and category pages</p>
+                            </div>
+                            <div class="feature">
+                                <h4>👑 Premium Badge</h4>
+                                <p>Build trust with a premium seller badge</p>
+                            </div>
+                        </div>
+
+                        <div class="pricing-options">
+                            <div class="pricing-card">
+                                <h4>Monthly</h4>
+                                <p class="price">UGX 50,000/month</p>
+                                <button class="subscribe-btn">Subscribe</button>
+                            </div>
+                            <div class="pricing-card featured">
+                                <h4>Annual (Best Value)</h4>
+                                <p class="price">UGX 500,000/year</p>
+                                <p class="savings">Save UGX 100,000</p>
+                                <button class="subscribe-btn primary">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Product Modal -->
+        <div class="modal" id="addProductModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Add New Product</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <form class="product-form">
+                    <div class="form-group">
+                        <label for="productName">Product Name</label>
+                        <input type="text" id="productName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="productDescription">Description</label>
+                        <textarea id="productDescription" rows="4"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="productPrice">Price (UGX)</label>
+                            <input type="number" id="productPrice" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="productStock">Stock Quantity</label>
+                            <input type="number" id="productStock" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="productCategory">Category</label>
+                        <select id="productCategory">
+                            <option value="makeup">Makeup</option>
+                            <option value="skincare">Skincare</option>
+                            <option value="hair">Hair Care</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="cancel-btn">Cancel</button>
+                        <button type="submit" class="save-btn">Save Product</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/seller-dashboard.js"></script>
+</body>
+</html>

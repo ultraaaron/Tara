@@ -1,0 +1,18 @@
+tara-beauty-platform/
+│
+├── index.html
+├── products.html
+├── product-detail.html
+├── seller-dashboard.html
+├── checkout.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── main.js
+│   ├── products.js
+│   └── seller-dashboard.js
+├── images/
+│   ├── placeholder-product1.jpg
+│   ├── placeholder-product2.jpg
+│   └── placeholder-product3.jpg
+└── README.md
